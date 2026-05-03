@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Security Simulation</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="startScreen" class="fade">
+  <h1>AI SECURITY SYSTEM</h1>
+  <p>Advanced Threat Detection Simulation</p>
+  <button id="startBtn">Initialize</button>
+</div>
+
+<div id="terminal" class="hidden fade"></div>
+
+<div id="main" class="hidden fade">
+  <h2>Analyzing System...</h2>
+  <div class="progress-bar">
+    <div id="progress"></div>
+  </div>
+  <p id="log"></p>
+</div>
+
+<div id="end" class="hidden fade">
+  <h1>Simulation Complete ✅</h1>
+  <p>No real threat detected. This was a frontend simulation.</p>
+  <button onclick="location.reload()">Run Again</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
