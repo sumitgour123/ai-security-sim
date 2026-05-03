@@ -1,0 +1,61 @@
+body {
+  margin: 0;
+  background: #020617;
+  color: #00ffcc;
+  font-family: monospace;
+  text-align: center;
+}
+
+.screen {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+.active {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Loader */
+.circle {
+  width: 60px;
+  height: 60px;
+  border: 5px solid #00ffcc;
+  border-top: 5px solid transparent;
+  border-radius: 50%;
+  margin: auto;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Progress bar */
+.bar {
+  width: 60%;
+  margin: auto;
+  border: 1px solid #00ffcc;
+}
+
+#progress {
+  height: 20px;
+  width: 0%;
+  background: #00ffcc;
+}
+
+/* Alert */
+.danger {
+  color: red;
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0.2; }
+}
