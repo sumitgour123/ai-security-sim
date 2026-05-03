@@ -1,0 +1,59 @@
+body {
+  margin:0;
+  background:black;
+  color:#00ff00;
+  font-family: monospace;
+  overflow:hidden;
+}
+
+/* MATRIX BG */
+canvas {
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+}
+
+/* GRID UI */
+.container {
+  display:grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto 150px;
+  gap:8px;
+  padding:8px;
+  height:100vh;
+}
+
+.panel {
+  border:1px solid #00ff00;
+  padding:8px;
+  overflow:auto;
+  background: rgba(0,0,0,0.7);
+}
+
+#logs { grid-column:1; grid-row:1 / span 2; }
+#ai { grid-column:2; grid-row:1; }
+#alerts { grid-column:2; grid-row:2; color:red; }
+
+/* GLITCH */
+.glitch {
+  animation: glitch 0.15s infinite;
+}
+
+@keyframes glitch {
+  0%{transform:translate(2px,-2px)}
+  50%{transform:translate(-2px,2px)}
+  100%{transform:translate(2px,-1px)}
+}
+
+button {
+  position:fixed;
+  bottom:10px;
+  left:10px;
+  right:10px;
+  padding:12px;
+  background:red;
+  color:white;
+  border:none;
+  font-size:16px;
+}
