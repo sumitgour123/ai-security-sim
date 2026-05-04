@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  background: black;
+  color: #00ff9d;
+  font-family: monospace;
+  overflow: hidden;
+}
+
+/* MATRIX */
+#matrix {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+}
+
+/* BOOT */
+#boot {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* GLITCH */
+.glitch {
+  animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+  0% { text-shadow: 2px 0 red; }
+  25% { text-shadow: -2px 0 blue; }
+  50% { text-shadow: 2px 2px green; }
+  75% { text-shadow: -2px -2px yellow; }
+  100% { text-shadow: 2px 0 red; }
+}
+
+.hidden { display: none; }
+
+/* TOP BAR */
+#top {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #111;
+}
+
+/* TERMINAL */
+#terminal {
+  height: 75vh;
+  padding: 10px;
+  overflow-y: auto;
+}
+
+/* INPUT */
+#cmd {
+  width: 100%;
+  padding: 10px;
+  background: black;
+  color: #00ff9d;
+  border: none;
+  outline: none;
+}
