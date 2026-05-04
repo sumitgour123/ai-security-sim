@@ -1,0 +1,35 @@
+body{
+  margin:0;
+  font-family: monospace;
+  background:black;
+  color:#00ff9d;
+  overflow:hidden;
+}
+
+.screen{
+  display:none;
+  height:100vh;
+  padding:20px;
+}
+
+.active{
+  display:block;
+}
+
+h1{
+  font-size:20px;
+}
+
+button{
+  margin-top:20px;
+  padding:10px 15px;
+  background:#00ff9d;
+  border:none;
+  color:black;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+@media(max-width:600px){
+  h1{font-size:16px;}
+}
