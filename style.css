@@ -1,0 +1,53 @@
+body{
+  margin:0;
+  background:black;
+  color:#00ff9d;
+  font-family: monospace;
+  overflow:hidden;
+}
+
+.screen{
+  display:none;
+  height:100vh;
+  padding:20px;
+}
+
+.active{
+  display:block;
+}
+
+h1{
+  font-size:20px;
+  text-shadow:0 0 10px #00ff9d;
+}
+
+.log{
+  margin-top:10px;
+  font-size:14px;
+  line-height:1.6;
+  white-space:pre-line;
+}
+
+button{
+  margin-top:20px;
+  padding:10px 16px;
+  background:#00ff9d;
+  border:none;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.flash{
+  animation: flash 0.25s 5;
+}
+
+@keyframes flash{
+  0%{background:black;}
+  50%{background:#2a0000;}
+  100%{background:black;}
+}
+
+@media(max-width:600px){
+  h1{font-size:16px;}
+  .log{font-size:12px;}
+}
